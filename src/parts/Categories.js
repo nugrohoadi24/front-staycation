@@ -4,7 +4,7 @@ import React from 'react'
 export default function Categories({ data }) {
   return data.map( (category, index1) => {
     return <section className='container' key={`category-${index1}`}>
-        <h4 className='mb-3 font-weight-bold'>
+        <h4 className='mb-3'>
             {category.name}
         </h4>
         <div className='container-grid'>
@@ -26,7 +26,7 @@ export default function Categories({ data }) {
                             <div className='meta-wrapper'>
                                 <Button 
                                     href={`/properties/${item._id}`}
-                                    className='streched-link d-block text-gray-800'
+                                    className='stretched-link d-block text-gray-800'
                                     type='link'
                                 >
                                     <h5>

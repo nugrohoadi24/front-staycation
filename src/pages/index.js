@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import Header from 'elements/parts/Header'
+import Header from 'parts/Header'
 import jsonIndex from 'json/landingPage'
-import Hero from 'elements/parts/Hero'
-import MostPick from 'elements/parts/MostPick'
-import Categories from 'elements/parts/Categories'
+import Hero from 'parts/Hero'
+import MostPick from 'parts/MostPick'
+import Categories from 'parts/Categories'
+import Testimony from 'parts/Testimony'
+import Footer from 'parts/Footer'
 
 export default class index extends Component {
   constructor(props) {
@@ -18,6 +20,8 @@ export default class index extends Component {
         <Hero refMostPick={this.refMostPick} data={jsonIndex.hero}></Hero>
         <MostPick refMostPick={this.refMostPick} data={jsonIndex.mostPicked}></MostPick>
         <Categories data={jsonIndex.categories}></Categories>
+        <Testimony data={jsonIndex.testimonial}/>
+        <Footer/>
       </>
     )
   }

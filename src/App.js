@@ -1,6 +1,6 @@
 import './assets/scss/style.scss'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import index from 'elements/pages';
+import index from 'pages';
 
 
 function App() {
